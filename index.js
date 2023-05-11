@@ -13,7 +13,7 @@ function writeToFile(fileName, answers) {
   let svgStr = "";
   // Set width and height of logo container
   svgStr =
-    '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
+    '<svg version="1.1" width="300" height="250" xmlns="http://www.w3.org/2000/svg">';
   // <g> tag to wrap the text tag
   svgStr += "<g>";
   // Insert shape from users answers to the string
@@ -23,17 +23,17 @@ function writeToFile(fileName, answers) {
   let shapeChoice;
   if (answers.shape === "Triangle") {
     shapeChoice = new Triangle();
-    svgStr += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeColor}"/>`;
+    svgStr += `<polygon points="155, 20 246, 184 58, 184" fill="${answers.shapeColor}"/>`;
   } else if (answers.shape === "Square") {
     shapeChoice = new Square();
-    svgStr += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeColor}"/>`;
+    svgStr += `<rect x="75" y="42" width="165" height="165" fill="${answers.shapeColor}"/>`;
   } else if (answers.shape === "Circle"){
     shapeChoice = new Circle();
-    svgStr += `<circle cx="150" cy="115" r="80" fill="${answers.shapeColor}"/>`;
+    svgStr += `<circle cx="160" cy="120" r="90" fill="${answers.shapeColor}"/>`;
   }
 
   // Insert the text and its color
-  svgStr += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>`;
+  svgStr += `<text x="160" y="140" text-anchor="middle" font-size="50" fill="${answers.textColor}">${answers.text}</text>`;
   // Close </g> tag
   svgStr += "</g>";
   // Close </svg> tag
