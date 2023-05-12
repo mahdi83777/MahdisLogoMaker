@@ -35,7 +35,7 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 The following image shows the web application's appearance and functionality:
 
-!["Circle".](./examples/circle.PNG)
+!["Circle".](./images/circle.PNG)
 
 ## Installation
 
